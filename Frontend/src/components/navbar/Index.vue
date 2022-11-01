@@ -16,35 +16,38 @@
     >
       <font-awesome-icon icon="fa-solid fa-bars" />
     </button>
-
     <div class="menu hidden w-full md:flex md:items-center md:w-auto" id="menu">
       <ul
         class="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0"
       >
         <li>
-          <a class="md:p-4 py-2 block hover:text-purple-400" href="#"
-            >Features</a
-          >
+          <routerlink to="/">
+            <a class="md:p-4 py-2 block hover:text-purple-400">Home</a>
+          </routerlink>
         </li>
         <li>
-          <a class="md:p-4 py-2 block hover:text-purple-400" href="#"
-            >Pricing</a
-          >
+          <routerlink to="/store">
+            <a class="md:p-4 py-2 block hover:text-purple-400">Store</a>
+          </routerlink>
         </li>
         <li>
-          <a class="md:p-4 py-2 block hover:text-purple-400" href="#"
-            >Customers</a
-          >
+          <routerlink to="/add">
+            <a class="md:p-4 py-2 block hover:text-purple-400">Add</a>
+          </routerlink>
         </li>
         <li>
-          <a class="md:p-4 py-2 block hover:text-purple-400" href="#">Blog</a>
+          <routerlink to="/about">
+            <a class="md:p-4 py-2 block hover:text-purple-400">About</a>
+          </routerlink>
         </li>
         <li>
-          <a
-            class="md:p-4 py-2 block hover:text-purple-400 text-purple-500"
-            href="#"
-          >
-            Sign Up
+          <a class="md:p-4 py-2 block hover:text-purple-400 text-purple-500">
+            Login
+          </a>
+        </li>
+        <li>
+          <a class="md:p-4 py-2 block hover:text-purple-400 text-purple-500">
+            Regiser
           </a>
         </li>
       </ul>
