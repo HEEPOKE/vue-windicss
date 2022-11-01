@@ -26,7 +26,7 @@
           </RouterLink>
         </li>
         <li>
-          <RouterLink class="cursor-pointer" to="/">
+          <RouterLink class="cursor-pointer" to="/store">
             <a class="md:p-4 py-2 block hover:text-purple-400">Store</a>
           </RouterLink>
         </li>
