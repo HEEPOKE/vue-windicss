@@ -3,7 +3,7 @@
     class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-white"
   >
     <div>
-      <routerlink to="/">
+      <routerlink class="cursor-pointer" to="/">
         <img src="../../assets/vue.svg" />
         <!-- <span class="">Vue ts App</span> -->
       </routerlink>
@@ -21,22 +21,22 @@
         class="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0"
       >
         <li>
-          <routerlink to="/">
+          <routerlink class="cursor-pointer" to="/">
             <a class="md:p-4 py-2 block hover:text-purple-400">Home</a>
           </routerlink>
         </li>
         <li>
-          <routerlink to="/store">
+          <routerlink class="cursor-pointer" to="/store">
             <a class="md:p-4 py-2 block hover:text-purple-400">Store</a>
           </routerlink>
         </li>
         <li>
-          <routerlink to="/add">
+          <routerlink class="cursor-pointer" to="/add">
             <a class="md:p-4 py-2 block hover:text-purple-400">Add</a>
           </routerlink>
         </li>
         <li>
-          <routerlink to="/about">
+          <routerlink class="cursor-pointer" to="/about">
             <a class="md:p-4 py-2 block hover:text-purple-400">About</a>
           </routerlink>
         </li>
