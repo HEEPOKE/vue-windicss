@@ -3,6 +3,7 @@ import HomeVue from "../pages/Home.vue";
 import StoreVue from "../pages/Store.vue";
 import AddStoreVue from "../pages/AddStore.vue";
 import AboutVue from "../pages/About.vue";
+import NotFoundVue from "../pages/errors/NotFound.vue";
 
 const routes = [
   {

@@ -63,7 +63,7 @@
           <a
             class="md:p-4 py-2 block hover:text-purple-700 dark:hover:text-purple-400"
           >
-            Regiser
+            Register
           </a>
         </li>
       </ul>
@@ -79,9 +79,6 @@ export default {
   components: {
     ChangemodeVue,
   },
-  data: () => ({
-    darkmode: false,
-  }),
   methods: {
     Toggle() {
       const menu = document.querySelector("#menu");

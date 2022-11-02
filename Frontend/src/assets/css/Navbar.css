@@ -7,3 +7,9 @@
   border-bottom-color: rgba(107, 114, 128);
   border-width: 1px;
 }
+
+.darkNav {
+  border-bottom-style: solid;
+  border-bottom-color: #dde1e3;
+  border-width: 2px;
+}
