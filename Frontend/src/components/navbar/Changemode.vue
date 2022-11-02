@@ -10,12 +10,12 @@
     />
     <label
       for="checkbox"
-      class="labell relative bg-white flex justify-between items-center scale-150 rounded-4xl w-50px p-5px !cursor-pointer"
+      class="labell relative bg-white border border-dark-900 dark:border-light-100 flex justify-between items-center scale-150 rounded-4xl w-55px p-5px !cursor-pointer"
     >
       <font-awesome-icon icon="fa-solid fa-moon" />
-      <font-awesome-icon icon="fa-solid fa-sun" />
+      <font-awesome-icon icon="fa-solid fa-sun" class="text-dark-900" />
       <div
-        class="ball !absolute bg-gray-900 left-2px w-20px h-20px rounded-1/2 transition-transform !ease-linear"
+        class="ball !absolute bg-gray-900 left-2px w-24px h-24px rounded-1/2 transition-transform !ease-linear"
         id="ball"
       ></div>
     </label>

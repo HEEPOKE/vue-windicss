@@ -1,3 +1,9 @@
 .translateChange {
   transform: translateX(24px) !important;
 }
+
+.Nav {
+  border-bottom-style: solid;
+  border-bottom-color: rgba(107, 114, 128);
+  border-width: 1px;
+}
