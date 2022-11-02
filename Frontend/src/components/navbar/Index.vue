@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-white"
+    class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-gray-700 bg-gray-900"
   >
     <div>
       <RouterLink class="cursor-pointer" to="/">
