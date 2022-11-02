@@ -1,5 +1,5 @@
 <template>
-  <div class="hidden w-full md:flex md:items-center md:w-auto cursor-pointer">
+  <div class="hidden w-full md:flex md:items-center md:w-auto">
     <input type="checkbox" class="checkboxChange absolute opacity-0" id="checkboxChange" />
     <label
       for="checkbox"
@@ -8,7 +8,8 @@
       <font-awesome-icon icon="fa-solid fa-moon" />
       <font-awesome-icon icon="fa-solid fa-sun" />
       <div
-        class="ball absolute bg-gray-900 left-2px w-20px h-20px rounded-1/2 transition-transform ease-linear"
+        class="ball !absolute bg-gray-900 left-2px w-20px h-20px rounded-1/2 transition-transform !ease-linear cursor-pointer"
+        id="ball"
         @click="ChangeMode()"
       ></div>
     </label>
@@ -19,11 +20,14 @@ export default {
   name: "ChangeModeVue",
   methods: {
     ChangeMode() {
-      const checkbox = document.getElementById("checkboxChange");
+      const ball = document.querySelector("#ball");
 
-      checkbox?.addEventListener("change", () => {
-        document.body.classList.toggle("dark");
-      });
+      ball?.classList.toggle("translateChange");
+      // const checkbox = document.getElementById("checkboxChange");
+
+      // checkbox?.addEventListener("change", () => {
+      //   document.body.classList.toggle("dark");
+      // });
     },
   },
 };

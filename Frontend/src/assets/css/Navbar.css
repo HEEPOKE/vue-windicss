@@ -1,3 +1,2 @@
-.checkboxChange:checked + .labell .ball{
-  transform: translateX(24px);
-}
+.translateChange {
+  transform: translateX(24px) !important;
