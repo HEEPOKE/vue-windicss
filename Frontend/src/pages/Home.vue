@@ -2,7 +2,7 @@
   <MenuVue />
   <div class="bg-light-100">
     Home
-    <button class="btn btn-blue">aaa</button>
+    <button class="bg-white dark: bg-green-500">aaa</button>
   </div>
 </template>
 <script lang="ts">

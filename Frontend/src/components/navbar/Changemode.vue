@@ -1,5 +1,8 @@
 <template>
-  <div class="hidden w-full md:flex md:items-center md:w-auto">
+  <div
+    class="hidden w-full md:flex md:items-center md:w-auto"
+    @click="ChangeMode()"
+  >
     <input
       type="checkbox"
       class="checkboxChange absolute opacity-0"
@@ -7,14 +10,13 @@
     />
     <label
       for="checkbox"
-      class="labell relative bg-white flex justify-between items-center scale-150 rounded-4xl w-50px p-5px"
+      class="labell relative bg-white flex justify-between items-center scale-150 rounded-4xl w-50px p-5px !cursor-pointer"
     >
       <font-awesome-icon icon="fa-solid fa-moon" />
       <font-awesome-icon icon="fa-solid fa-sun" />
       <div
-        class="ball !absolute bg-gray-900 left-2px w-20px h-20px rounded-1/2 transition-transform !ease-linear cursor-pointer"
+        class="ball !absolute bg-gray-900 left-2px w-20px h-20px rounded-1/2 transition-transform !ease-linear"
         id="ball"
-        @click="ChangeMode()"
       ></div>
     </label>
   </div>
