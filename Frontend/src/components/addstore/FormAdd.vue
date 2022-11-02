@@ -77,7 +77,7 @@
         <button
           type="button"
           class="text-white w-1/3 bg-gray-400 hover:bg-gray-500 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
-          oncick=""
+          @click="Back"
         >
           Back
         </button>
@@ -92,6 +92,11 @@ export default {
   name: "FormVue",
   components: {
     HeaderVue,
+  },
+  methods: {
+    Back() {
+      window.history.back();
+    },
   },
 };
 </script>
