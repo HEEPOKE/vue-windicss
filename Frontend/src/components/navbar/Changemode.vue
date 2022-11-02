@@ -1,7 +1,7 @@
 <template>
   <div
     class="hidden w-full md:flex md:items-center md:w-auto"
-    @click="ChangeMode()"
+    @click="toggleDarkMode"
   >
     <input
       type="checkbox"
@@ -27,39 +27,23 @@ import { useDark, useToggle } from "@vueuse/core";
 export default {
   name: "ChangeModeVue",
   methods: {
-    ChangeMode() {
+    toggleDarkMode() {
       const ball = document.querySelector("#ball");
+      const checkbox = document.querySelector(
+        "#checkboxChange"
+      ) as HTMLInputElement | null;
+      const html = document.querySelector("html");
 
       ball?.classList.toggle("translateChange");
 
-      if (localStorage.getItem('color-theme')) {
-        if (localStorage.getItem('color-theme') === 'light') {
-            document.documentElement.classList.add('dark');
-            localStorage.setItem('color-theme', 'dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-            localStorage.setItem('color-theme', 'light');
-        }
+      const toggleDarkMode = function () {
+        checkbox?.checked;
+        html?.classList.toggle("dark");
+      };
 
-    // if NOT set via local storage previously
-    } else {
-        if (document.documentElement.classList.contains('dark')) {
-            document.documentElement.classList.remove('dark');
-            localStorage.setItem('color-theme', 'light');
-        } else {
-            document.documentElement.classList.add('dark');
-            localStorage.setItem('color-theme', 'dark');
-        }
-    }
+      toggleDarkMode();
+      checkbox?.addEventListener("click", toggleDarkMode);
     },
   },
-  // setup() {
-  //   const isDark = useDark();
-  //   const toggleDark = useToggle(isDark);
-  // },
-  // data() {
-  //   const isDark = useDark();
-  //   const toggleDark = useToggle(isDark);
-  // },
 };
 </script>

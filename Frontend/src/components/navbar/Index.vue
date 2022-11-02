@@ -59,6 +59,7 @@
 </template>
 <script lang="ts">
 import ChangemodeVue from "./Changemode.vue";
+import { mapGetters } from "vuex";
 
 export default {
   name: "MenuVue",
