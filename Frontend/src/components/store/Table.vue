@@ -3,7 +3,7 @@
     <div class="flex items-center pb-4 mt-1 justify-end mr-3">
       <div class="relative">
         <div class="flex absolute inset-y-0 items-center">
-          <font-awesome-icon icon="fa-solid fa-magnifying-glass" class=" dark:text-light-400" />
+          <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="ml-5 dark:text-gray-400" />
         </div>
         <input
           type="text"
