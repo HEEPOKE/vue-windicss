@@ -1,8 +1,8 @@
 <template>
   <MenuVue />
-  <div class="bg-light-100">
+  <div class="bg-light-100 dark: bg-blue-300">
     Home
-    <button class="bg-white dark: bg-green-500">aaa</button>
+    <button class="bg-white text-gray-900 dark: bg-green-500 dark: text-yellow-400">aaa</button>
   </div>
 </template>
 <script lang="ts">
