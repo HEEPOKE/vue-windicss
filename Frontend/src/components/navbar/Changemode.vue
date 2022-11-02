@@ -1,6 +1,10 @@
 <template>
   <div class="hidden w-full md:flex md:items-center md:w-auto">
-    <input type="checkbox" class="checkboxChange absolute opacity-0" id="checkboxChange" />
+    <input
+      type="checkbox"
+      class="checkboxChange absolute opacity-0"
+      id="checkboxChange"
+    />
     <label
       for="checkbox"
       class="labell relative bg-white flex justify-between items-center scale-150 rounded-4xl w-50px p-5px"
@@ -32,3 +36,9 @@ export default {
   },
 };
 </script>
+<!-- <script setup>
+import { useDark, useToggle } from "@vueuse/core";
+
+const isDark = useDark();
+const toggleDark = useToggle(isDark);
+</script> -->

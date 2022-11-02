@@ -2,6 +2,7 @@
   <MenuVue />
   <div class="bg-light-100">
     Home
+    <button class="btn btn-blue">aaa</button>
   </div>
 </template>
 <script lang="ts">
