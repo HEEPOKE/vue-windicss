@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-x-auto relative shadow-md mt-6 sm:rounded-lg">
+  <div class="overflow-x-auto relative shadow-md mt-6">
     <div class="flex items-center pb-4 mt-1 justify-end mr-3">
       <div class="relative">
         <div class="flex absolute inset-y-0 items-center">
