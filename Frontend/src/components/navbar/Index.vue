@@ -51,12 +51,18 @@
           </a>
         </li>
       </ul>
+      <ChangemodeVue />
     </div>
   </nav>
 </template>
 <script lang="ts">
+import ChangemodeVue from "./Changemode.vue";
+
 export default {
   name: "MenuVue",
+  components: {
+    ChangemodeVue,
+  },
   methods: {
     Toggle() {
       const menu = document.querySelector("#menu");
