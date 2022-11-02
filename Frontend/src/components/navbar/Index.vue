@@ -46,7 +46,9 @@
           </a>
         </li>
         <li>
-          <a class="md:p-4 py-2 block hover:text-purple-400 text-purple-500 dark:bg-rose-500">
+          <a
+            class="md:p-4 py-2 block hover:text-purple-400 text-purple-500 dark: bg-rose-500"
+          >
             Regiser
           </a>
         </li>
@@ -69,15 +71,9 @@ export default {
   methods: {
     Toggle() {
       const menu = document.querySelector("#menu");
+      // const element = document.getElementById("html-root");
 
       menu?.classList.toggle("hidden");
-
-      const element = document.getElementById("html-root");
-      if (element?.classList.contains("dark")) {
-        element.classList.remove("dark");
-      } else {
-        element?.classList.add("dark");
-      }
     },
   },
 };

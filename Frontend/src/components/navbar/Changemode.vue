@@ -22,6 +22,8 @@
   </div>
 </template>
 <script lang="ts">
+import { useDark, useToggle } from "@vueuse/core";
+
 export default {
   name: "ChangeModeVue",
   methods: {
@@ -29,18 +31,11 @@ export default {
       const ball = document.querySelector("#ball");
 
       ball?.classList.toggle("translateChange");
-      // const checkbox = document.getElementById("checkboxChange");
-
-      // checkbox?.addEventListener("change", () => {
-      //   document.body.classList.toggle("dark");
-      // });
     },
+  },
+  setup() {
+    const isDark = useDark();
+    const toggleDark = useToggle(isDark);
   },
 };
 </script>
-<!-- <script setup>
-import { useDark, useToggle } from "@vueuse/core";
-
-const isDark = useDark();
-const toggleDark = useToggle(isDark);
-</script> -->
