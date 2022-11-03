@@ -8,10 +8,11 @@
       Login
     </a>
   </li>
+
   <Teleport to="body">
-    <div v-if="LoginModal" class="modal-mask">
+    <div v-if="LoginModal" class="fixed bg-light-50 z-auto !transition-opacity">
       <div class="modal-wrapper">
-        <div class="modal-container">
+        <div class="modal-container bg-light-50 rounded-2xl shadow-md">
           <div class="modal-header">
             <slot name="header">default header</slot>
           </div>
