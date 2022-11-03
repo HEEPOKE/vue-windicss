@@ -13,7 +13,7 @@
         />
       </div>
     </div>
-    <table class="w-full text-sm text-left text-gray-400">
+    <table class="w-full text-sm table-auto">
       <thead>
         <tr class="text-center">
           <th scope="col" class="p-4 border border-dark-900 text-dark-900 bg-light-100 hover:bg-light-600 dark:border-light-100 dark:text-white dark:bg-dark-800 dark:hover:bg-dark-300">#</th>
