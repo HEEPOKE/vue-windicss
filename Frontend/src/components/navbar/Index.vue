@@ -55,7 +55,7 @@
         <li>
           <a
             class="md:p-4 py-2 block !cursor-pointer hover:text-purple-700 dark:hover:text-purple-400"
-            @click="openModal()"
+            @click=""
           >
             Login
           </a>
@@ -71,9 +71,6 @@
 import ChangemodeVue from "./Changemode.vue";
 import LoginModalVue from "./LoginModal.vue";
 import RegisterModalVue from "./RegisterModal.vue";
-import { openModal, pushModal, closeModal } from "jenesius-vue-modal";
-
-const modal = await openModal(LoginModalVue);
 
 export default {
   name: "MenuVue",
@@ -87,9 +84,6 @@ export default {
       const menu = document.querySelector("#menu");
 
       menu?.classList.toggle("hidden");
-    },
-    openModal() {
-      modal.on
     },
   },
 };
