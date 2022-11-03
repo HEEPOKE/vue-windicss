@@ -53,18 +53,22 @@
           </RouterLink>
         </li>
         <li>
-          <a
-            class="md:p-4 py-2 block !cursor-pointer hover:text-purple-700 dark:hover:text-purple-400"
-          >
-            Login
-          </a>
+          <RouterLink class="cursor-pointer" to="/login">
+            <a
+              class="md:p-4 py-2 block !cursor-pointer hover:text-purple-700 dark:hover:text-purple-400"
+            >
+              Login
+            </a>
+          </RouterLink>
         </li>
         <li>
-          <a
-            class="md:p-4 py-2 block !cursor-pointer hover:text-purple-700 dark:hover:text-purple-400"
-          >
-            Register
-          </a>
+          <RouterLink class="cursor-pointer" to="/register">
+            <a
+              class="md:p-4 py-2 block !cursor-pointer hover:text-purple-700 dark:hover:text-purple-400"
+            >
+              Register
+            </a>
+          </RouterLink>
         </li>
       </ul>
       <ChangemodeVue />
