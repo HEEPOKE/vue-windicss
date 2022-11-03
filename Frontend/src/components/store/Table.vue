@@ -14,7 +14,7 @@
         <input
           type="text"
           id="table-search"
-          class="block p-2 pl-10 w-80 text-sm rounded-lg border placeholder-dark-900 border-dark-900 dark:border-light-100 dark:placeholder-gray-400 dark:bg-dark-800 dark:hover:bg-dark-300"
+          class="block p-2 pl-10 w-80 text-sm rounded-lg border placeholder-dark-900 border-dark-900 dark:border-light-100 dark:placeholder-gray-400 dark:bg-dark-800 dark:hover:bg-dark-300 dark:text-white"
           placeholder="Search for items"
         />
       </div>
