@@ -52,14 +52,6 @@
             >
           </RouterLink>
         </li>
-        <li>
-          <a
-            class="md:p-4 py-2 block !cursor-pointer hover:text-purple-700 dark:hover:text-purple-400"
-            @click=""
-          >
-            Login
-          </a>
-        </li>
         <LoginModalVue />
         <RegisterModalVue />
       </ul>
@@ -85,6 +77,11 @@ export default {
 
       menu?.classList.toggle("hidden");
     },
+  },
+  data() {
+    return {
+      LoginModal: false,
+    };
   },
 };
 </script>
