@@ -1,6 +1,6 @@
 <template>
   <div
-    class="text-3xl font-bold text-light-50 text-center cursor-pointer mt-20"
+    class="text-3xl font-bold text-light-50 text-center cursor-pointer mt-18"
   >
     Login
   </div>
