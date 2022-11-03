@@ -55,12 +55,12 @@
         <li>
           <a
             class="md:p-4 py-2 block !cursor-pointer hover:text-purple-700 dark:hover:text-purple-400"
-            @click="showModal"
+            @click="openModal()"
           >
             Login
           </a>
         </li>
-        <LoginModalVue v-show="isModalVisible" @close="closeModal" />
+        <LoginModalVue />
         <RegisterModalVue />
       </ul>
       <ChangemodeVue />
@@ -71,6 +71,9 @@
 import ChangemodeVue from "./Changemode.vue";
 import LoginModalVue from "./LoginModal.vue";
 import RegisterModalVue from "./RegisterModal.vue";
+import { openModal, pushModal, closeModal } from "jenesius-vue-modal";
+
+const modal = await openModal(LoginModalVue);
 
 export default {
   name: "MenuVue",
@@ -79,22 +82,14 @@ export default {
     LoginModalVue,
     RegisterModalVue,
   },
-  data() {
-    return {
-      isModalVisible: false,
-    };
-  },
   methods: {
     Toggle() {
       const menu = document.querySelector("#menu");
 
       menu?.classList.toggle("hidden");
     },
-    showModal() {
-      this.isModalVisible = true;
-    },
-    closeModal() {
-      this.isModalVisible = false;
+    openModal() {
+      modal.on
     },
   },
 };
