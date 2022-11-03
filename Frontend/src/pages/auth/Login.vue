@@ -4,7 +4,7 @@
     <div class="w-lg rounded-lg border mt-3 border-dark-700 bg-light-100">
       <form>
         <div class="ml-3 mr-3 mt-2">
-          <label class="block mb-2 font-extrabold text-lg">Name</label>
+          <label class="block mb-2 font-extrabold text-lg">Email</label>
           <input
             type="text"
             name="email"
@@ -24,6 +24,24 @@
             required
           />
         </div>
+        <div class="flex items-center ml-3 mt-2">
+          <input
+            id="default-checkbox"
+            type="checkbox"
+            value=""
+            class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+          />
+          <label
+            for="default-checkbox"
+            class="ml-2 text-sm font-medium text-dark-900"
+            >Remember Me</label
+          >
+        </div>
+        <!-- <div class="relative float-right mr-3">
+          <RouterLink class="cursor-pointer" to="/forgotpassword">
+            <a class="hover:underline hover:text-blue-600">Forgot Password?</a>
+          </RouterLink>
+        </div> -->
         <div class="flex justify-center mt-5">
           <button
             type="submit"
