@@ -1,6 +1,6 @@
 <template>
   <div class="overflow-x-auto relative shadow-md mt-6">
-    <div class="flex items-center pb-4 mt-1 justify-end mr-3">
+    <div class="flex items-center pb-4 mt-1 ml-2 lg:justify-end mr-3 md:justify-center">
       <div class="relative">
         <div class="flex absolute inset-y-0 items-center">
           <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="ml-5 dark:text-gray-400" />
@@ -16,12 +16,12 @@
     <table class="w-full text-sm text-left text-gray-400">
       <thead class="text-xs uppercase bg-gray-700 text-gray-400">
         <tr class="text-center">
-          <th scope="col" class="p-4">#</th>
-          <th scope="col" class="py-3 px-6">Product name</th>
-          <th scope="col" class="py-3 px-6">Color</th>
-          <th scope="col" class="py-3 px-6">Category</th>
-          <th scope="col" class="py-3 px-6">Price</th>
-          <th scope="col" class="py-3 px-6">Action</th>
+          <th scope="col" class="p-4 dark:border dark:border-light-100 dark:text-white dark:bg-dark-800 dark:hover:bg-dark-900">#</th>
+          <th scope="col" class="py-3 px-6 dark:border dark:border-light-100 dark:text-white dark:bg-dark-800 dark:hover:bg-dark-900">Product name</th>
+          <th scope="col" class="py-3 px-6 dark:border dark:border-light-100 dark:text-white dark:bg-dark-800 dark:hover:bg-dark-900">Color</th>
+          <th scope="col" class="py-3 px-6 dark:border dark:border-light-100 dark:text-white dark:bg-dark-800 dark:hover:bg-dark-900">Category</th>
+          <th scope="col" class="py-3 px-6 dark:border dark:border-light-100 dark:text-white dark:bg-dark-800 dark:hover:bg-dark-900">Price</th>
+          <th scope="col" class="py-3 px-6 dark:border dark:border-light-100 dark:text-white dark:bg-dark-800 dark:hover:bg-dark-900">Action</th>
         </tr>
       </thead>
       <tbody class="text-center">
