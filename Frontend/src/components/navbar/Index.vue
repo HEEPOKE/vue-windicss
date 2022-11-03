@@ -52,7 +52,15 @@
             >
           </RouterLink>
         </li>
-        <LoginModalVue />
+        <li>
+          <a
+            class="md:p-4 py-2 block !cursor-pointer hover:text-purple-700 dark:hover:text-purple-400"
+            @click="showModal"
+          >
+            Login
+          </a>
+        </li>
+        <LoginModalVue v-show="isModalVisible" @close="closeModal" />
         <RegisterModalVue />
       </ul>
       <ChangemodeVue />
@@ -71,11 +79,22 @@ export default {
     LoginModalVue,
     RegisterModalVue,
   },
+  data() {
+    return {
+      isModalVisible: false,
+    };
+  },
   methods: {
     Toggle() {
       const menu = document.querySelector("#menu");
 
       menu?.classList.toggle("hidden");
+    },
+    showModal() {
+      this.isModalVisible = true;
+    },
+    closeModal() {
+      this.isModalVisible = false;
     },
   },
 };
