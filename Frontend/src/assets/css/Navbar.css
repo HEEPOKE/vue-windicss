@@ -7,7 +7,3 @@
   border-bottom-color: rgba(107, 114, 128);
   border-width: 1px;
 }
-
-.modal-container {
-  z-index: 1000 !important;
-}

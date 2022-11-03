@@ -52,8 +52,20 @@
             >
           </RouterLink>
         </li>
-        <LoginModalVue />
-        <RegisterModalVue />
+        <li>
+          <a
+            class="md:p-4 py-2 block !cursor-pointer hover:text-purple-700 dark:hover:text-purple-400"
+          >
+            Login
+          </a>
+        </li>
+        <li>
+          <a
+            class="md:p-4 py-2 block !cursor-pointer hover:text-purple-700 dark:hover:text-purple-400"
+          >
+            Register
+          </a>
+        </li>
       </ul>
       <ChangemodeVue />
     </div>
@@ -61,15 +73,11 @@
 </template>
 <script lang="ts">
 import ChangemodeVue from "./Changemode.vue";
-import LoginModalVue from "./LoginModal.vue";
-import RegisterModalVue from "./RegisterModal.vue";
 
 export default {
   name: "MenuVue",
   components: {
     ChangemodeVue,
-    LoginModalVue,
-    RegisterModalVue,
   },
   methods: {
     Toggle() {
@@ -77,11 +85,6 @@ export default {
 
       menu?.classList.toggle("hidden");
     },
-  },
-  data() {
-    return {
-      LoginModal: false,
-    };
   },
 };
 </script>
