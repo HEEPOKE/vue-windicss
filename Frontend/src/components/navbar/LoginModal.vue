@@ -12,10 +12,10 @@
   <Teleport to="body">
     <div
       v-if="LoginModal"
-      class="modal-mask absolute w-lg bg-light-50 !transition-opacity rounded-2xl shadow-md"
+      class="modal-mask relative grid place-items-center"
     >
-      <div class="modal-wrapper">
-        <div class="modal-container left-1/2 bg-light-50">
+      <div class="modal-wrapper w-lg bg-light-50 !transition-opacity rounded-2xl shadow-md">
+        <div class="modal-container bg-light-50">
           <div class="modal-header">
             <slot name="header">default header</slot>
           </div>
