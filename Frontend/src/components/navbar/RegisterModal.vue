@@ -1,7 +1,7 @@
 <template>
   <li>
     <a
-      class="md:p-4 py-2 block hover:text-purple-700 dark:hover:text-purple-400"
+      class="md:p-4 py-2 block !cursor-pointer hover:text-purple-700 dark:hover:text-purple-400"
     >
       Register
     </a>

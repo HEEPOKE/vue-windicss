@@ -11,7 +11,7 @@ import App from "./App.vue";
 import router from "./routes/routes";
 import "virtual:windi.css";
 import "./assets/css/Navbar.css";
-import "./assets/css/main.css";
+import "./assets/css/Main.css";
 
 library.add(faBars, faMoon, faSun, faMagnifyingGlass);
 
