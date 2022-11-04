@@ -1,8 +1,18 @@
+import dotenv from "dotenv";
 import express from "express";
-const app = express();
-const port = 5000;
+import cors from "cors";
+import helmet from "helmet";
 
-app.get("/", (_, res) => {
-  res.status(200).send();
-});
-app.listen(port, () => console.log(`Running on port ${port}`));
+dotenv.config();
+
+const PORT: number = parseInt(process.env.PORT as string, 10);
+
+const app = express();
+
+app.use(helmet());
+app.use(cors());
+app.use(express.json());
+
+app.listen(PORT, () => {
+    console.log(`Listening on port ${PORT}`);
+  });
