@@ -16,11 +16,13 @@ import "./assets/css/Main.css";
 
 library.add(faBars, faMoon, faSun, faMagnifyingGlass);
 
-createApp(App)
+const app = createApp(App)
   .component("font-awesome-icon", FontAwesomeIcon)
   .use(vue3GoogleLogin, {
-    clientId: "1036357928807-arjrpr6cm3bci4601n784put6linm1ot.apps.googleusercontent.com",
+    clientId:
+      "909732484180-0rpp0i38rvsriordprhrhfvnflaiods1.apps.googleusercontent.com",
     // clientId: process.env.GOOGLE_CLIENT_ID,
   })
-  .use(router)
-  .mount("#app");
+  .use(router);
+
+app.mount("#app");
