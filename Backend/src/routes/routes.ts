@@ -5,6 +5,4 @@ const router = express.Router();
 router.get("/", () => console.log("true"));
 router.post("/createproduct");
 
-module.exports = {
-  routes: router,
-};
+export default router;
