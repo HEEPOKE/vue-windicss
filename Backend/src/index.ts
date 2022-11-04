@@ -18,9 +18,9 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use(bodyParser.json());
-// app.use(helmet());
-app.use(errorHandler);
-app.use(notFoundHandler);
+app.use(helmet());
+// app.use(errorHandler);
+// app.use(notFoundHandler);
 
 app.use("/api", router);
-app.listen(port, () => console.log("https://localhost:" + port || 6476));
+app.listen(port, () => console.log("http://localhost:" + port || 6476));
