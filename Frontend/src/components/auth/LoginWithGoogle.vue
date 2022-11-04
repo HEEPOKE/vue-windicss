@@ -4,7 +4,6 @@
   </div>
 </template>
 <script lang="ts">
-import { decodeCredential } from "vue3-google-login";
 import { CallbackTypes } from "vue3-google-login";
 
 export default {
