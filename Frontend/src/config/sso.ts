@@ -8,8 +8,3 @@ export const { GOOGLE_CLIENT_ID, GOOGLE_CLIENTSECRET } = process.env;
 //   google_client_id: GOOGLE_CLIENT_ID,
 //   google_clientsecret: GOOGLE_CLIENTSECRET,
 // };
-
-export default class {
-  google_client_id = GOOGLE_CLIENT_ID;
-  google_clientsecret = GOOGLE_CLIENTSECRET;
-}
