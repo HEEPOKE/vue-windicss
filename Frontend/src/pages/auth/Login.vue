@@ -65,11 +65,15 @@
 </template>
 <script lang="ts">
 import HeaderLoginVue from "../../components/auth/HeaderLogin.vue";
+import LoginWithGoogleVue from "../../components/auth/LoginWithGoogle.vue";
+import LoginwithFBVue from "../../components/auth/LoginwithFB.vue";
 
 export default {
   name: "LoginVue",
   components: {
     HeaderLoginVue,
+    LoginWithGoogleVue,
+    LoginwithFBVue,
   },
   methods: {
     Back() {
