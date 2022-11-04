@@ -47,7 +47,7 @@
             type="submit"
             class="text-white w-1/3 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-md px-5 py-2.5 mr-2 mb-2"
           >
-            Save
+          Login
           </button>
         </div>
       </form>
@@ -60,6 +60,8 @@
           Back
         </button>
       </div>
+      <div  class="text-center text-dark-900 text-lg">OR</div>
+      <LoginWithGoogleVue />
     </div>
   </div>
 </template>
