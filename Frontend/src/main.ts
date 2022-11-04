@@ -7,6 +7,7 @@ import {
   faSun,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
+import vue3GoogleLogin from "vue3-google-login";
 import App from "./App.vue";
 import router from "./routes/routes";
 import "virtual:windi.css";
@@ -17,5 +18,9 @@ library.add(faBars, faMoon, faSun, faMagnifyingGlass);
 
 createApp(App)
   .component("font-awesome-icon", FontAwesomeIcon)
+  .use(vue3GoogleLogin, {
+    clientId: "YOUR_GOOGLE_CLIENT_ID",
+    // clientId: process.env.GOOGLE_CLIENT_ID,
+  })
   .use(router)
   .mount("#app");
