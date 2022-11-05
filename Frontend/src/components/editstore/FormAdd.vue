@@ -83,7 +83,7 @@ export default {
       window.history.back();
     },
     handleSubmitForm() {
-      let apiURL = "http://localhost:4000/api/create-student";
+      let apiURL = "http://localhost:4000/api/create/product";
       axios.post(apiURL, this.product).then(() => {
         this.$router.push("/store");
         this.product = {
