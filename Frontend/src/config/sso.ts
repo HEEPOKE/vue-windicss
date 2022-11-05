@@ -2,9 +2,12 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-export const { GOOGLE_CLIENT_ID, GOOGLE_CLIENTSECRET } = process.env;
+const { GOOGLE_CLIENT_ID, GOOGLE_ClientSecret, FACEBOOK_APPID } = process.env;
 
-// module.exports= {
-//   google_client_id: GOOGLE_CLIENT_ID,
-//   google_clientsecret: GOOGLE_CLIENTSECRET,
-// };
+const config = {
+  GOOGLE_CLIENT_ID,
+  GOOGLE_ClientSecret,
+  FACEBOOK_APPID,
+};
+
+export default config;

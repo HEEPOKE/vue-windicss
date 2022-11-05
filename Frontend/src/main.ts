@@ -10,6 +10,7 @@ import {
 import vue3GoogleLogin from "vue3-google-login";
 import App from "./App.vue";
 import router from "./routes/routes";
+import config from "./config/sso";
 import "virtual:windi.css";
 import "./assets/css/Navbar.css";
 import "./assets/css/Main.css";
@@ -19,9 +20,7 @@ library.add(faBars, faMoon, faSun, faMagnifyingGlass);
 const app = createApp(App)
   .component("font-awesome-icon", FontAwesomeIcon)
   .use(vue3GoogleLogin, {
-    clientId:
-      "909732484180-0rpp0i38rvsriordprhrhfvnflaiods1.apps.googleusercontent.com",
-    // clientId: process.env.GOOGLE_CLIENT_ID,
+    clientId: config.GOOGLE_CLIENT_ID,
   })
   .use(router);
 
