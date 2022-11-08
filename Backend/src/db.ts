@@ -3,4 +3,11 @@ import config from "./config";
 
 const db = mongoose.connect(config.MONGO_HOST);
 
-export default db;
+// const connectDB = async () => {
+//   await mongoose.connect(config.MONGO_HOST);
+//   console.log("MongoDb Connected");
+// };
+
+const DB = { db };
+
+export default DB;
