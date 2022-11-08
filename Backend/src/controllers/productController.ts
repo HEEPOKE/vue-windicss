@@ -1,6 +1,7 @@
 import { NextFunction, Request, Response } from "express";
 import mongoose from "mongoose";
 import Products from "../models/product";
+import db from "../db";
 
 const getAllProducts = (req: Request, res: Response, next: NextFunction) => {
   Products.find()
