@@ -20,7 +20,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(helmet());
 // app.use(errorHandler);
-app.use(notFoundHandler);
+// app.use(notFoundHandler);
 
 app.use("/api", router);
 app.listen(config.PORT, () => console.log("http://localhost:" + config.PORT));
