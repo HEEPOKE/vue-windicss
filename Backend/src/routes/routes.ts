@@ -1,9 +1,10 @@
 import express from "express";
-import * as productServices from "../services/productServicesices";
+import productController from "../controllers/productController";
 
 const router = express.Router();
 
 router.get("/");
-router.post("/createproduct", productServices.Create);
+router.get("/product", productController.getAllProducts);
+router.post("/create/product", productController.createProducts);
 
 export default router;

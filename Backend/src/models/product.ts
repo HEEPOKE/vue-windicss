@@ -23,5 +23,14 @@ const ProductSchema: Schema = new Schema(
   },
   { timestamps: true }
 );
-const Products = mongoose.model<ProductProductInterface>("Products", ProductSchema);
+
+// ProductSchema.post<ProductProductInterface>("save", function () {
+//   this.extraInformation = "want save";
+// });
+
+const Products = mongoose.model<ProductProductInterface>(
+  "Products",
+  ProductSchema
+);
+
 export default Products;
