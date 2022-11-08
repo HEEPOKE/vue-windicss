@@ -1,7 +1,6 @@
 import mongoose from 'mongoose';
 import { MongoClient } from 'mongodb';
 
-
 const {
     MONGO_HOST,
     MONGO_USERNAME,
