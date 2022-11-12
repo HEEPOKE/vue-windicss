@@ -26,7 +26,7 @@ const routes = [
     component: RegisterVue,
   },
   {
-    path: "/forgotpassword",
+    path: "/forgot-password",
     name: "ForgotPasswordVue",
     component: ForgotPasswordVue,
   },
