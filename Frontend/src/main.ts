@@ -19,9 +19,9 @@ library.add(faBars, faMoon, faSun, faMagnifyingGlass);
 
 const app = createApp(App)
   .component("font-awesome-icon", FontAwesomeIcon)
-  .use(vue3GoogleLogin, {
-    clientId: config.GOOGLE_CLIENT_ID,
-  })
+  // .use(vue3GoogleLogin, {
+  //   clientId: config.GOOGLE_CLIENT_ID,
+  // })
   .use(router);
 
 app.mount("#app");

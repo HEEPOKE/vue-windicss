@@ -1,5 +1,5 @@
 <template>
-  <div>forgotpassword</div>
+  <div>forgot-password</div>
 </template>
 <script lang="ts">
 export default {
