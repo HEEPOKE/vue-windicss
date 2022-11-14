@@ -1,5 +1,5 @@
 import mongoose, { Schema } from "mongoose";
-import ProductProductInterface from "../interfaces/product";
+import ProductInterface from "../interfaces/product";
 
 const ProductSchema: Schema = new Schema(
   {
@@ -28,7 +28,7 @@ const ProductSchema: Schema = new Schema(
 //   this.extraInformation = "want save";
 // });
 
-const Products = mongoose.model<ProductProductInterface>(
+const Products = mongoose.model<ProductInterface>(
   "Products",
   ProductSchema
 );
