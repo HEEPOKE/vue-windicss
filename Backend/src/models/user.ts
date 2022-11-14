@@ -1,7 +1,7 @@
 import mongoose, { Schema } from "mongoose";
-import ProductInterface from "../interfaces/product";
+import UserInterface from "../interfaces/user";
 
-const ProductSchema: Schema = new Schema(
+const UserSchema: Schema = new Schema(
   {
     name: {
       type: String,
@@ -24,13 +24,9 @@ const ProductSchema: Schema = new Schema(
   { timestamps: true }
 );
 
-// ProductSchema.post<ProductProductInterface>("save", function () {
-//   this.extraInformation = "want save";
-// });
-
-const Products = mongoose.model<ProductInterface>(
-  "Products",
-  ProductSchema
+const Users = mongoose.model<UserInterface>(
+  "Users",
+  UserSchema
 );
 
-export default Products;
+export default Users;
