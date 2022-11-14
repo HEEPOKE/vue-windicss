@@ -3,22 +3,28 @@ import UserInterface from "../interfaces/user";
 
 const UserSchema: Schema = new Schema(
   {
-    name: {
+    username: {
       type: String,
       required: true,
       unique: true,
     },
-    color: {
+    password: {
       type: String,
       required: true,
     },
-    category: {
+    firstname: {
       type: String,
       required: true,
     },
-    price: {
-      type: Number,
+    lastname: {
+      type: String,
       required: true,
+    },
+    status: {
+      type: String,
+    },
+    role: {
+      type: String,
     },
   },
   { timestamps: true }
